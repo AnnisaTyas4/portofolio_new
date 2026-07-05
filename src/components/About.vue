@@ -15,7 +15,7 @@
                         >
                     </div>
                 </div>
-
+ 
                 <div class="flex flex-col mt-16 lg:mt-0 justify-center" data-aos="fade-left">
                     <h2 class="text-white font-bold text-3xl md:text-4xl mb-6 tracking-wide">
                         ABOUT ME
