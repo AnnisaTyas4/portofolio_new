@@ -1,16 +1,19 @@
 <template>
-    <section id="home" class="relative w-full overflow-hidden min-h-[100svh] sm:min-h-[92vh] lg:min-h-[85vh] flex items-center pt-24 sm:pt-28 md:pt-32 pb-14 sm:pb-20 md:pb-24">
-        
+    <section
+        id="home"
+        class="relative w-full overflow-hidden min-h-0 sm:min-h-[92vh] lg:min-h-[85vh] flex items-start sm:items-center pt-32 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24"
+    >
+
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden mt-8 sm:mt-12 md:mt-20">
             <h1 class="text-[clamp(4.5rem,22vw,13.75rem)] lg:text-[clamp(8rem,14vw,16rem)] font-serif font-black text-white/[0.05] -rotate-12 select-none tracking-widest whitespace-nowrap">
                 DEVELOPER
             </h1>
         </div>
-        
-        <div class="w-full px-5 sm:px-6 md:px-8 lg:px-12 max-w-7xl mx-auto relative z-10 mt-6 sm:mt-10 md:mt-16 lg:mt-20">
-            
+
+        <div class="w-full px-5 sm:px-6 md:px-8 lg:px-12 max-w-7xl mx-auto relative z-10 mt-0 sm:mt-10 md:mt-16 lg:mt-20">
+
             <div class="flex flex-col justify-center min-w-0">
-                
+
                 <div data-aos="fade-right" data-aos-offset="0" data-aos-anchor="#home">
                     <p class="text-gray-300 font-semibold text-xl sm:text-2xl md:text-3xl tracking-wide mb-2 md:mb-4">
                         I'm a
@@ -26,7 +29,7 @@
 
             </div>
         </div>
-        
+
     </section>
 </template>
 
