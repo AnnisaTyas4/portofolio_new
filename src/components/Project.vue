@@ -1,11 +1,11 @@
 <template>
-    <section id="project" class="relative w-full overflow-x-hidden py-20 scroll-mt-24">
+    <section id="project" class="relative w-full overflow-x-hidden py-14 sm:py-16 md:py-20 scroll-mt-24">
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-16 max-w-6xl mx-auto relative z-10">
             
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-white font-bold text-3xl md:text-4xl tracking-wide mb-8">PORTFOLIO</h2>
+            <div class="text-center mb-10 sm:mb-12 md:mb-16" data-aos="fade-up">
+                <h2 class="text-white font-bold text-2xl sm:text-3xl md:text-4xl tracking-wide mb-6 sm:mb-8">PORTFOLIO</h2>
                 
-                <ul class="flex flex-wrap justify-center gap-6 md:gap-12 text-sm md:text-base font-medium text-gray-400">
+                <ul class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-12 text-xs sm:text-sm md:text-base font-medium text-gray-400">
                     <li 
                         @click="activeTab = 'all'"
                         :class="activeTab === 'all' ? 'text-[#38bdf8]' : 'hover:text-white transition-colors'"
@@ -29,12 +29,12 @@
 
             <div v-if="activeTab === 'website' || activeTab === 'all'" class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 
-                <div class="flex flex-col order-2 lg:order-1" data-aos="fade-right">
-                    <h3 class="text-[#38bdf8] text-base md:text-lg font-semibold mb-2 tracking-wider uppercase">
+                <div class="flex flex-col order-2 lg:order-1 min-w-0" data-aos="fade-right">
+                    <h3 class="text-[#38bdf8] text-sm sm:text-base md:text-lg font-semibold mb-2 tracking-wider uppercase">
                         PROJECT 1
                     </h3>
                     
-                    <h2 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+                    <h2 class="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug mb-4 break-words">
                         Maggo - Platform Pengelolaan Sampah Organik
                     </h2>
                     
@@ -45,8 +45,8 @@
                 </div>
 
                 <div class="relative order-1 lg:order-2 flex justify-center lg:justify-end" data-aos="fade-left">
-                    <div class="relative w-full max-w-[300px] lg:max-w-[350px]">
-                        <div class="absolute inset-0 border-[6px] border-[#38bdf8] -translate-x-4 translate-y-4 md:-translate-x-6 md:translate-y-6 rounded-xl z-0"></div>
+                    <div class="relative w-full max-w-[min(82vw,300px)] sm:max-w-[320px] lg:max-w-[350px]">
+                        <div class="absolute inset-0 border-[5px] sm:border-[6px] border-[#38bdf8] -translate-x-3 translate-y-3 sm:-translate-x-4 sm:translate-y-4 md:-translate-x-6 md:translate-y-6 rounded-xl z-0"></div>
                         
                         <img 
                             src="../../src/assets/Maggo.jpeg" 
@@ -59,11 +59,11 @@
 
             </div>
 
-            <div v-if="activeTab === 'mobile' || activeTab === 'all'" :class="['grid lg:grid-cols-2 gap-10 lg:gap-16 items-center', activeTab === 'all' ? 'mt-20 lg:mt-28' : '']">
+            <div v-if="activeTab === 'mobile' || activeTab === 'all'" :class="['grid lg:grid-cols-2 gap-10 lg:gap-16 items-center', activeTab === 'all' ? 'mt-14 sm:mt-20 lg:mt-28' : '']">
                 
                 <div class="relative order-1 lg:order-1 flex justify-center lg:justify-start" data-aos="fade-right">
-                    <div class="relative w-full max-w-[400px] lg:max-w-[450px]">
-                        <div class="absolute inset-0 border-[6px] border-[#38bdf8] -translate-x-4 translate-y-4 md:-translate-x-6 md:translate-y-6 rounded-xl z-0"></div>
+                    <div class="relative w-full max-w-[min(86vw,400px)] lg:max-w-[450px]">
+                        <div class="absolute inset-0 border-[5px] sm:border-[6px] border-[#38bdf8] -translate-x-3 translate-y-3 sm:-translate-x-4 sm:translate-y-4 md:-translate-x-6 md:translate-y-6 rounded-xl z-0"></div>
                         
                         <img 
                             src="../../src/assets/Sitiga.png" 
@@ -74,12 +74,12 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col order-2 lg:order-2" data-aos="fade-left">
-                    <h3 class="text-[#38bdf8] text-base md:text-lg font-semibold mb-2 tracking-wider uppercase">
+                <div class="flex flex-col order-2 lg:order-2 min-w-0" data-aos="fade-left">
+                    <h3 class="text-[#38bdf8] text-sm sm:text-base md:text-lg font-semibold mb-2 tracking-wider uppercase">
                         PROJECT 2
                     </h3>
                     
-                    <h2 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-4">
+                    <h2 class="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug mb-4 break-words">
                         SiTiga - Aplikasi Sistem Informasi Statistik Kota Salatiga
                     </h2>
                     
